@@ -9,28 +9,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+  
 </head>
 <body class=" ">
-<div class="bg-[#eee]">
+<div class="bg-[#eee] ">
     <!-- nav  -->
-    <div class="bg-[#fff] py-5 shadow-lg w-full  sticky top-0  ">
+    <div  class="bg-[#fff] py-5 shadow-lg w-full    z-50 lg:px-3 px-3 nav-control  animate__animated ">
       <div class="container flex  justify-between items-center mx-auto ">
        
         <div class="">
           <h1 class="text-3xl font-bold">Yummy</h1>
         </div>
-        <div class="flex justify-center items-center  md:static h-screen bg-slate-200 md:bg-[#fff]  md:h-auto w-full fixed  top-0 -left-full md:top-auto  md:left-auto z-10 duration-500 mobile-menu ">
+        <div class="flex justify-center items-center  md:static h-screen bg-slate-200 md:bg-[#fff]  md:h-auto w-full fixed  top-0 -left-full md:top-auto  md:left-auto z-50 duration-500 mobile-menu ">
           <div class=" absolute top-0 right-0 border border-green-500 w-5 h-5 flex justify-center items-center rounded-full mr-3 mt-3 md:hidden close-menu">
             <i class="fa-solid fa-xmark "></i>
           </div>
-          <ul class=" list-none flex flex-col  md:flex-row md:w-[600px] md:justify-between font-bold text-gray-500 >
-            <li class="md:hover:border-rose-500 md:hover:border-b-2  duration-200 md:py-2"><a href="#">Home</a></li>
-            <li class="md:hover:border-rose-500 md:hover:border-b-2  duration-200 md:py-2 py-3 md:py-0">About</li>
-            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200 md:py-2 py-3 md:py-0">Menu</li>
-            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200 md:py-2 py-3 md:py-0">Reviews</li>
-            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200 md:py-2 py-3 md:py-0">Chefs</li>
-            <li class=" md:hover:border-rose-500 md:hover:border-b-2 duration-200 md:py-2 py-3 md:py-0 ">Gallery</li>
-            <li class=" md:hover:border-rose-500 md:hover:border-b-2 duration-200 md:py-2 py-3 md:py-0">Contact</li>
+          <ul class=" list-none flex flex-col  md:flex-row md:w-[600px] md:justify-between font-bold text-gray-500" >
+            <li class="md:hover:border-rose-500 md:hover:border-b-2  duration-200  py-3 md:py-0"><a href="#home" class="mobile-slide-closed">Home</a></li>
+            <li class="md:hover:border-rose-500 md:hover:border-b-2  duration-200  py-3 md:py-0"><a href="#about" class="mobile-slide-closed"> About</a></li>
+            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200  py-3 md:py-0"><a href="#menu" class="mobile-slide-closed"> Menu</a></li>
+            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200  py-3 md:py-0"><a href="#reviews" class="mobile-slide-closed"> Reviews</a></li>
+            <li class= "md:hover:border-rose-500 md:hover:border-b-2 duration-200  py-3 md:py-0"><a href="#chefs" class="mobile-slide-closed"> Chefs</a></li>
+            <li class=" md:hover:border-rose-500 md:hover:border-b-2 duration-200  py-3 md:py-0 "><a href="#gallery" class="mobile-slide-closed"> Gallery</a></li>
+            <li class=" md:hover:border-rose-500 md:hover:border-b-2 duration-200  py-3 md:py-0"><a href="#contact" class="mobile-slide-closed"> Contact</a></li>
           </ul>
         </div>
         <div class=" flex justify-center items-center space-x-3 md:space-x-0  ">
@@ -47,55 +48,61 @@
     </div>
   
     <!-- head -->
-    <section class="  bg-[#eee] ">
-    <div class="container mx-auto ">
+    <section id="home" class="  bg-[#eee]  ">
+    <div class="container mx-auto lg:px-3">
       <div class=" py-[40px] flex justify-between items-center flex-col-reverse md:flex-row ">
         <div class="md:w-96 leading-5  ">
           <div class=" text-center md:text-left">
-            <h1 class="text-4xl uppercase tracking-in-expand">Enjoy Your Healthy
+            <h1 class="text-4xl uppercase tracking-in-expand headline">Enjoy Your Healthy
               Delicious Food</h1>
           </div>
           <div class="my-8 text-center md:text-left">
-            <p class="animate__backInRight">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <p class=" headline">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           </div>
           <div class="flex space-x-5 justify-center md:justify-start">
-            <button class="hover:bg-rose-800  bg-rose-600 px-5 py-2 rounded-3xl  text-slate-100">Book a Table</button>
-            <div class="flex items-center space-x-3">
-              <div class="w-10 ">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512 " style="fill: #ce1212;"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M188.3 147.1C195.8 142.8 205.1 142.1 212.5 147.5L356.5 235.5C363.6 239.9 368 247.6 368 256C368 264.4 363.6 272.1 356.5 276.5L212.5 364.5C205.1 369 195.8 369.2 188.3 364.9C180.7 360.7 176 352.7 176 344V167.1C176 159.3 180.7 151.3 188.3 147.1V147.1zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
-              </div>
+           <div class="">
+            <button class="hover:bg-rose-800  bg-rose-600 px-5 py-2  rounded-3xl  text-slate-100 headline">Book a Table</button>
+           </div>
+            <div class="flex items-center space-x-3 w-28 headline">
+             
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512 " style="fill: #ce1212;"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M188.3 147.1C195.8 142.8 205.1 142.1 212.5 147.5L356.5 235.5C363.6 239.9 368 247.6 368 256C368 264.4 363.6 272.1 356.5 276.5L212.5 364.5C205.1 369 195.8 369.2 188.3 364.9C180.7 360.7 176 352.7 176 344V167.1C176 159.3 180.7 151.3 188.3 147.1V147.1zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
               <span class="text-[#ce1212] text-[20px] font-bold">Watch Video</span>
+            
+           
             </div>
           </div>
           </div>
           <div class="w-96 mb-[50px] md:mb-0">
-            <img class="tilt-in-fwd-tl" src="./Assets/img/hero-img.png" alt="">
+            <img class="headline" src="./Assets/img/hero-img.png" alt="">
           </div>
        </div>
     </div>
     </section>
   
     <!-- about -->
-    <section class="bg-[#fff] py-10">
-      <div class="container mx-auto ">
+    <section id="about" class="bg-[#fff] py-10">
+      <div class="container mx-auto lg:px-3 ">
         <div class="text-center mb-5">
-          <h3 class="text-gray-500 uppercase mb-3">About Us</h3>
-          <h1 class="text-2xl uppercase">Learn More <span class="text-[#ce1212]">About Us</span></h1>
+          <h3 class="text-gray-500 uppercase mb-3 headline">About Us</h3>
+          <h1 class="text-2xl uppercase headline">Learn More <span class="text-[#ce1212]">About Us</span></h1>
         </div>
         <div class=" grid md:grid-cols-2 space-x-10 space-y-5 md:sapce-y-0">
           <div class="">
-            <img class="" src="./Assets/img/about.jpg" alt="">
+            <img class=" headline" src="./Assets/img/about.jpg" alt="">
           </div>
           <div class="space-y-5 md:text-justify">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt veniam molestiae numquam natus facere. Magni expedita dicta aspernatur maiores?</p>
+            <p class="headline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt veniam molestiae numquam natus facere. Magni expedita dicta aspernatur maiores?</p>
   
-            <ul class="space-y-5 ">
-              <li><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            <ul class="space-y-5 headline">
+              <li class="headline"><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li class="headline"><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li class="headline"><i class="fa-sharp fa-solid fa-check-double text-[#ce1212]"></i> 
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+              </li>
             </ul>
   
-            <p class="">
+            <p class="headline">
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
             </p>
           </div>
@@ -104,10 +111,10 @@
     </section>
   
     <!-- choose yummy -->
-    <section>
-    <div class="container mx-auto py-32 w-auto">
+    <section id="choose">
+    <div class="container mx-auto py-32 w-auto lg:px-3">
       <div class="grid md:grid-cols-4 gap-10 duration-1000">
-        <div class=" bg-[#ce1212] p-5 space-y-10 text-center rounded-2xl hover:scale-[1.1] duration-1000 shadow-md">
+        <div class=" bg-[#ce1212] p-5 space-y-10 text-center rounded-2xl hover:scale-[1.1] duration-1000 headline shadow-md">
           <div class=" ">
             <h1 class="text-[#fff] text-2xl">Why Choose Yummy?</h1>
           </div>
@@ -121,7 +128,7 @@
           </div>
          </div>
          
-          <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 shadow-md">
+          <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 headline shadow-md">
            <div class=" flex flex-col items-center gap-10">
             <div class="w-10 h-10 flex justify-center items-center p-10 bg-[#fae7e7] rounded-full shadow-md">
               <i class="fa-solid fa-clipboard-check fa-2x text-[#ce1212]"></i>
@@ -141,7 +148,7 @@
            </div>
           </div>
       
-          <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 shadow-md">
+          <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 headline shadow-md">
             <div class=" flex flex-col items-center gap-10">
              <div class="w-10 h-10 flex justify-center items-center p-10 bg-[#fae7e7] rounded-full shadow-md">
               <i class="fa-solid fa-gem fa-2xl text-[#ce1212]"></i>
@@ -162,7 +169,7 @@
             </div>
            </div>
       
-           <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 shadow-md ">
+           <div class="bg-white  p-10 rounded-2xl hover:scale-[1.1] duration-1000 headline shadow-md ">
             <div class=" flex flex-col items-center gap-10">
              <div class="w-10 h-10 flex justify-center items-center p-10 bg-[#fae7e7] rounded-full shadow-md">
               <i class="fa-solid fa-inbox fa-2xl text-[#ce1212]"></i>
@@ -190,20 +197,20 @@
       <div class="bg-[url('./Assets/img/stats-bg.jpg')] h-96 bg-cover bg-no-repeat contract-0">
         <div class="container mx-auto ">
          <div class=" hidden md:block">
-          <div class="flex justify-between items-center h-80 ">
-            <div class="">
-              <h2 class="text-white text-5xl font-bold">232</h2>
+          <div class="flex justify-between items-center h-80 llg:px-3">
+            <div class="headline">
+              <h2 class="text-white text-5xl font-bold ">232</h2>
               <p class="text-indigo-800 text-2xl">Clients</p>
             </div>
-            <div class="">
+            <div class="headline">
               <h2 class="text-white text-5xl font-bold">521</h2>
               <p class="text-indigo-800 text-2xl">Projects</p>
             </div>
-            <div class="">
+            <div class="headline">
               <h2 class="text-white text-5xl font-bold">1453</h2>
               <p class="text-indigo-800 text-2xl">Hours Of Support</p>
             </div>
-            <div class="">
+            <div class="headline">
               <h2 class="text-white text-5xl font-bold">32</h2>
               <p class="text-indigo-800 text-2xl">Workers</p>
             </div>
@@ -214,23 +221,23 @@
     </section>
   
     <!-- Menu -->
-    <section class="bg-[#fff] py-10 w-auto">
-    <div class="container mx-auto">
+    <section id="menu" class="bg-[#fff] py-10 w-auto">
+    <div class="container mx-auto ">
        <div class="text-center">
-        <h2 class=" text-gray-500 uppercase">Our Menu</h2>
-        <h1 class="text-3xl uppercase">Check Our <span class=" text-[#ce1212] ">Yummy Menu</span></h1>
+        <h2 class=" text-gray-500 uppercase headline">Our Menu</h2>
+        <h1 class="text-3xl uppercase headline">Check Our <span class=" text-[#ce1212] ">Yummy Menu</span></h1>
        </div>
        <div class=" flex flex-col items-center mb-5">
         <div class="my-10">
           <ul class=" list-none flex space-x-5 duration-500">
-            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px]"><a href="#menu">Starters</a></li>
-            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px]"><a href="#breakfast">Breakfast</a></li>
-            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px]"><a href="#lunch">Lunch</a></li>
-            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px]"><a href="#dinner">Dinner</a></li>
+            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px] headline"><a href="#menu">Starters</a></li>
+            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px] headline"><a href="#breakfast">Breakfast</a></li>
+            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px] headline"><a href="#lunch">Lunch</a></li>
+            <li class="border-b border-b-2 hover:border-rose-500 duration-500 py-3 text-[18px] headline"><a href="#dinner">Dinner</a></li>
           </ul>
         </div>
         <div class="">
-          <h2 class=" uppercase text-gray-500 " id="menu">Menu</h2>
+          <h2 class=" uppercase text-gray-500 headline" id="menu">Menu</h2>
           <!-- <ul class="list-none flex">
             <li class="text-3xl text-[#ce1212] " id="breakfast">Breakfast</li>
             <li class="text-3xl text-[#ce1212]" id="lunch">Lunch</li>
@@ -242,7 +249,7 @@
        <!-- list -->
        <div class="md:grid  md:grid-rows-2 md:gap-10  flex  flex-col items-center justify-center space-y-10">
         <div class=" grid md:grid-cols-3 md:column-gap-20 ">
-          <div class="">
+          <div class="headline">
             <div class="w-96  p-5 flex  flex-col items-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-1.png" alt="" class="w-60">
@@ -255,7 +262,7 @@
                </div>
            </div>
           </div>
-          <div class="">
+          <div class="headline">
             <div class="w-96  p-5 flex  flex-col items-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-2.png" alt="" class="w-60">
@@ -269,7 +276,7 @@
                </div>
            </div>
           </div>
-          <div class="">
+          <div class="headline">
             <div class="w-96  p-5 flex  flex-col items-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-3.png" alt="" class="w-60">
@@ -285,7 +292,7 @@
         </div>
   
         <div class=" grid md:grid-cols-3 md:column-gap-20">
-          <div class="">
+          <div class="headline">
             <div class="w-96  p-5 flex  flex-col items-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-4.png" alt="" class="w-60">
@@ -298,7 +305,7 @@
                </div>
            </div>
           </div>
-          <div class="">
+          <div class="headline">
             <div class="w-96  p-5 flex  flex-col items-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-5.png" alt="" class="w-60">
@@ -312,7 +319,7 @@
                </div>
            </div>
           </div>
-          <div class="">
+          <div class="headline">
             <div class="w-96   p-5 flex  flex-col items-center justify-center">
               <div class="my-5">
               <img  src="./Assets/img/menu-item-6.png" alt="" class="w-60">
@@ -331,15 +338,15 @@
     </section>
   
     <!-- testimonals -->
-    <section class=" bg-slate-200">
-      <div class=" container mx-auto py-20">
+    <section id="reviews" class=" bg-slate-200">
+      <div class=" container mx-auto py-20 lg:px-3">
        <div class="text-center">
-        <h2 class=" uppercase text-gray-500">Testimonals</h2>
-        <h1 class=" uppercase text-3xl my-5">What Are They <span class="text-[#ce1212]"> Saying About Us</span></h1>
+        <h2 class=" uppercase text-gray-500 headline">Testimonals</h2>
+        <h1 class=" uppercase text-3xl my-5 headline">What Are They <span class="text-[#ce1212]"> Saying About Us</span></h1>
        </div>
   
        <div class="flex md:justify-between flex-col md:flex-row gap-10 md:my-10">
-        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000">
+        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000 headline">
           <div class=" flex justify-between items-center  ">
             <div class="flex space-x-3 items-center">
               <img src="./Assets/img/testimonials-1.jpg" alt="" class=" w-16 rounded-full">
@@ -376,7 +383,7 @@
           </div>
         </div>
   
-        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000">
+        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000 headline">
           <div class=" flex justify-between items-center  ">
             <div class="flex space-x-3 items-center">
               <img src="./Assets/img/testimonials-2.jpg" alt="" class=" w-16 rounded-full">
@@ -415,7 +422,7 @@
           </div>
         </div>
   
-        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000">
+        <div class="w-auto bg-[#fff] p-5 rounded-2xl shadow-lg space-y-5 hover:translate-y-[-10px] duration-1000 headline">
           <div class=" flex justify-between items-center  ">
             <div class="flex space-x-3 items-center">
               <img src="./Assets/img/testimonials-3.jpg" alt="" class=" w-16 rounded-full">
@@ -461,15 +468,15 @@
   
     <!-- chief -->
   
-    <section>
-      <div class="container mx-auto py-10">
+    <section id="chefs">
+      <div class="container mx-auto py-10 lg:px-3">
         <div class="text-center">
-          <h2 class=" uppercase  text-gray-500">Chefs</h2>
-          <h1 class=" uppercase text-3xl my-5">Our <span class="text-[#ce1212]">Proffesional</span> Chefs</h1>
+          <h2 class=" uppercase  text-gray-500 headline">Chefs</h2>
+          <h1 class=" uppercase text-3xl my-5 headline">Our <span class="text-[#ce1212]">Proffesional</span> Chefs</h1>
         </div>
   
         <div class=" flex md:justify-evenly flex-col md:flex-row gap-10 my-10 items-center justify-center">
-         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000">
+         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000 headline">
           <div class="">
             <img src="./Assets/img/chefs-1.jpg" alt="" class="w-auto rounded">
           </div>
@@ -492,7 +499,7 @@
           
          </div>
   
-         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000">
+         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000 headline">
           <div class="">
             <img src="./Assets/img/chefs-2.jpg" alt="" class="w-full rounded">
           </div>
@@ -516,7 +523,7 @@
          </div>
   
   
-         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000">
+         <div class="w-[380px] md:w-[400px] rounded  shadow-lg rounded-2xl  hover:scale-110 duration-1000 headline">
           <div class="">
             <img src="./Assets/img/chefs-3.jpg" alt="" class="w-full rounded">
           </div>
@@ -544,43 +551,43 @@
   
     <!--Book A table  -->
   
-    <section class="w-auto">
+    <section  class="w-auto">
     <div class="bg-[#fff] py-10">
       <div class="container mx-auto">
     <div class="">
       <div class="text-center">
-        <h2 class="text-gray-500 uppercase">Book A Table</h2>
-        <h1 class=" uppercase text-3xl my-5">Book <span class="text-[#ce1212]">Your Stay </span> With Us</h1>
+        <h2 class="text-gray-500 uppercase headline ">Book A Table</h2>
+        <h1 class=" uppercase text-3xl my-5 headline">Book <span class="text-[#ce1212]">Your Stay </span> With Us</h1>
       </div>
   
       <div class="bg-[#f7f7f7]  my-10  ">
        <div class=" flex md:justify-around flex-col md:flex-row items-center justify-center">
          
-         <img src="./Assets/img/reservation.jpg" alt="" class="w-[300px] items-center">
+         <img src="./Assets/img/reservation.jpg" alt="" class="w-[300px] items-center headline">
   
         
          
           <div class="md:grid md:grid-column md:gap-5 md:w-auto p-5 w-[400px] ">
             <div class=" md:space-x-5 flex flex-col md:flex-row ">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="text" placeholder="Your Name">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="email" placeholder="Your Email">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="tel" placeholder="Your Phone">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline" type="text" placeholder="Your Name">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline " type="email" placeholder="Your Email">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline " type="tel" placeholder="Your Phone">
                
             </div>
     
             <div class=" md:space-x-5 flex flex-col md:flex-row ">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="text" placeholder="Date">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="datetime" placeholder="Time">
-              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto " type="number" placeholder="0">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline" type="text" placeholder="Date">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline " type="datetime" placeholder="Time">
+              <input class="border p-3 focus:outline-none focus:border-rose-600 my-2 md:my-0 w-full md:w-auto headline" type="number" placeholder="0">
                
             </div>
   
             <div class="">
-              <textarea name="" id="" cols="85" rows="8" class="border  p-3 focus:border-rose-600 focus:outline-none w-auto" placeholder="Message"></textarea>
+              <textarea name="" id="" cols="85" rows="8" class="border  p-3 focus:border-rose-600 focus:outline-none w-auto headline" placeholder="Message"></textarea>
             </div>
   
             <div class="text-center">
-              <button class=" hover:bg-rose-800  bg-rose-600 px-5 py-2 rounded-3xl  text-slate-100">Book a Table</button>
+              <button class=" hover:bg-rose-800  bg-rose-600 px-5 py-2 rounded-3xl  text-slate-100 headline">Book a Table</button>
             </div>
           </div> 
        </div>  
@@ -593,11 +600,11 @@
     </section>
   
     <!-- Gallery -->
-    <section class="bg-[#eee]">
+    <section id="gallery" class="bg-[#eee]">
       <div class="container mx-auto py-10">
      <div class="text-center">
-      <h2 class="text-gray-500 uppercase">Gallery</h2>
-      <h1 class=" upperase text-3xl my-5">Check <span class="text-[#ce1212]">Our Gallery</span></h1>
+      <h2 class="text-gray-500 uppercase headline">Gallery</h2>
+      <h1 class=" upperase text-3xl my-5 headline">Check <span class="text-[#ce1212]">Our Gallery</span></h1>
      </div>
 
      <div class=" md:grid md:grid-cols-4 gap-5 py-5 flex flex-col items-center justify-center">
@@ -624,19 +631,19 @@
   
     <!-- contact -->
   
-    <section class="bg-[#fff] w-auto">
-     <div class="container mx-auto py-10">
+    <section id="contact" class="bg-[#fff] w-auto">
+     <div class="container mx-auto py-10 lg:px-3">
       <div class=" text-center">
-        <h2 class="uppercase text-gray-500">Contact</h2>
-        <h1 class=" uppercase text-3xl my-5">Need Help? <span class="text-[#ce1212]">Contact Us</span></h1>
+        <h2 class="uppercase text-gray-500 headline" >Contact</h2>
+        <h1 class=" uppercase text-3xl my-5 headline">Need Help? <span class="text-[#ce1212]">Contact Us</span></h1>
       </div>
   
-      <div class="my-10 w-auto ">
+      <div class="my-10 w-auto headline">
         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
       </div>
   
       <div class=" grid md:grid-cols-2 gap-5">
-       <div class=" bg-[#eee] p-10 shadow-lg">
+       <div class=" bg-[#eee] p-10 shadow-lg headline">
          <div class="flex space-x-5">
           <div class="">
             <i class="fa-solid fa-map fa-2x shadow-md p-3 bg-[#ce1212] rounded-full text-[#fff]"></i>
@@ -648,7 +655,7 @@
           </div>
          </div>
        </div>
-       <div class=" bg-[#eee] p-10 shadow-lg">
+       <div class=" bg-[#eee] p-10 shadow-lg headline">
         <div class="flex space-x-5">
          <div class="">
            <i class="fa-solid fa-envelope fa-2x shadow-md p-3 bg-[#ce1212] rounded-full text-[#fff]"></i>
@@ -661,7 +668,7 @@
         </div>
       </div>
   
-      <div class=" bg-[#eee] p-10 shadow-lg">
+      <div class=" bg-[#eee] p-10 shadow-lg headline">
         <div class="flex space-x-5">
          <div class="">
            <i class="fa-solid fa-phone fa-2x shadow-md p-3 bg-[#ce1212] rounded-full text-[#fff]"></i>
@@ -674,7 +681,7 @@
         </div>
       </div>
   
-      <div class=" bg-[#eee] p-10 shadow-lg">
+      <div class=" bg-[#eee] p-10 shadow-lg headline">
         <div class="flex space-x-5">
          <div class="">
            <i class="fa-solid fa-share fa-2x shadow-md p-3 bg-[#ce1212] rounded-full text-[#fff]"></i>
@@ -692,18 +699,18 @@
       <div class="bg-slate-100 shadow-lg p-5 my-10">
         <div class=" flex flex-col gap-5">
           <div class="flex flex-col md:flex-row gap-5">
-            <input type="text" placeholder="Your Name" class="p-3 border focus:outline-none focus:border-rose-500 w-full shadow-md">
-            <input type="email" placeholder="Your Email" class="p-3 border focus:outline-none focus:border-rose-500 w-full shadow-md">
+            <input type="text" placeholder="Your Name" class="p-3 border focus:outline-none focus:border-rose-500 w-full shadow-md headline">
+            <input type="email" placeholder="Your Email" class="p-3 border focus:outline-none focus:border-rose-500 w-full shadow-md headline">
     
           </div>
           <div class="">
-            <input type="text" placeholder="Subject" class="p-3 w-full border focus:outline-none focus:border-rose-500 shadow-md">
+            <input type="text" placeholder="Subject" class="p-3 w-full border focus:outline-none focus:border-rose-500 shadow-md headline">
           </div>
           <div class="">
-            <textarea name="Message" id="" cols="10" rows="5" class="w-full border focus:outline-none focus:border-rose-500 p-3 shadow-md" placeholder=""></textarea>
+            <textarea name="Message" id="" cols="10" rows="5" class="w-full border focus:outline-none focus:border-rose-500 p-3 shadow-md headline" placeholder=""></textarea>
           </div>
-          <div class="text-center">
-            <button class=" hover:bg-rose-800  bg-rose-600 px-5 py-2 rounded-3xl  text-slate-100">Send Message</button>
+          <div class="text-center ">
+            <button class=" hover:bg-rose-800  bg-rose-600 px-5 py-2 rounded-3xl  text-slate-100 headline">Send Message</button>
           </div>
         </div>
       </div>
@@ -716,23 +723,23 @@
     <div class="container mx-auto">
       <div class="p-5 flex justify-between flex-col md:flex-row border-b-2 border-cyan-100 py-10 text-center space-y-10 md:space-y-3">
         <div class="">
-          <h2 class="text-[#fff] text-[20px]">Address</h2>
+          <h2 class="text-[#fff] text-[20px] headline">Address</h2>
         </div>
         <div class="">
          <div class="space-y-5">
           <div class="flex flex-col md:flex-row space-x-5">
           <div class="">
-          <i class="fa-solid fa-phone fa-2x text-[#fff]"></i>
+          <i class="fa-solid fa-phone fa-2x text-[#fff] headline"></i>
   
           </div>
           <div class="">
-          <span class="text-[#fff] text-[20px] ">Reservations</span>
+          <span class="text-[#fff] text-[20px] headline">Reservations</span>
   
           </div>
           </div>
           <div class="">
-            <p class="text-[#fff]">Phone: +1 5589 55488 55</p>
-             <p class="text-[#fff]"> Email: info@example.com</p>
+            <p class="text-[#fff] headline">Phone: +1 5589 55488 55</p>
+             <p class="text-[#fff] headline"> Email: info@example.com</p>
           </div>
          </div> 
         </div>
@@ -741,55 +748,43 @@
           <div class="space-y-5">
             <div class="flex flex-col md:flex-row space-x-5">
               <div>
-                 <i class="fa-solid fa-clock fa-2x text-[#fff] "></i>
+                 <i class="fa-solid fa-clock fa-2x text-[#fff] headline "></i>
   
               </div>
               <div class="">
-                  <span class="text-[#fff] text-[20px]">Reservations</span>
+                  <span class="text-[#fff] text-[20px] headline">Reservations</span>
   
               </div>
             </div>
            <div class="">
-             <p class="text-[#fff]">Phone: +1 5589 55488 55</p>
-              <p class="text-[#fff]"> Email: info@example.com</p>
+             <p class="text-[#fff] headline">Phone: +1 5589 55488 55</p>
+              <p class="text-[#fff] headline"> Email: info@example.com</p>
            </div>
           </div> 
          </div>
   
          <div class="space-y-3 ">
-          <p class="text-[20px] text-[#fff]">Follow Us</p>
+          <p class="text-[20px] text-[#fff] headline">Follow Us</p>
           <div class="space-x-3 ">
-            <i class="fa-brands fa-twitter text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg  "></i>
-            <i class="fa-brands fa-facebook text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg "></i>
+            <i class="fa-brands fa-twitter text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg  headline"></i>
+            <i class="fa-brands fa-facebook text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg headline"></i>
   
-            <i class="fa-brands fa-instagram text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg "></i>
+            <i class="fa-brands fa-instagram text-[#fff] fa-2x p-2 border hover:bg-teal-300 shadow-md rounded-full duration-500 shadow-lg headline"></i>
   
           </div>
          </div>
       </div>
   
     <div class=" text-center py-10">
-     <h2 class="text-[#fff] md:text-[18px] text-[16px]">Design By Waiyan</h2>
+     <h2 class="text-[#fff] md:text-[18px] text-[16px] headline">Design By Waiyan</h2>
     </div>
   
     </div>
     </footer>
 </div>
 
-  
-  <script>
-    const menuOpen= document.querySelector('.menu-open');
-    const closeMenu= document.querySelector('.close-menu');
-    const mobileMenu= document.querySelector('.mobile-menu');
-
-
-    menuOpen.addEventListener('click',() =>{
-      mobileMenu.style.left = "0px";
-    })
-
-    closeMenu.addEventListener('click',() =>{
-      mobileMenu.style.left = "-100%";
-    })
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./Assets/js/main.js"></script>
 </body>
 </html>
